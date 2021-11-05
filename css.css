@@ -1,0 +1,513 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image:  url("arbol.png");
+    background-position: center;
+    background-size: 820px 900px;
+    background-color: #8bd6ed;
+    background: -o-linear-gradient(#8bd6ed 0%, #a4e6f9 50%);
+    transition:.2s background-color,.2s color;
+  }
+  
+  .top-section{
+    height:100%;
+    width: 100%;
+  }
+
+
+.sky {
+    width: 100%;
+    height: 395px;
+  }   
+  
+  .dark-mode {
+    background-color: #333333;
+    color: #8bd6ed;
+  }
+
+
+.sun {
+    position: absolute;
+    background-color: #f3f2ac;
+    border-color: #f3f2ac;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 100px;
+    border-radius: 50px;
+    /* Animacion del sol */
+    -webkit-animation: glowing 3200ms infinite;
+    -moz-animation: glowing 3200ms infinite;
+    -o-animation: glowing 3200ms infinite;
+    animation: glowing 3200ms infinite;
+  }
+  
+  /*keyframes para la animacion del Sol*/
+  
+  @-webkit-keyframes glowing {
+    0% {-webkit-box-shadow: 0 0 20px #f9f8d2; }
+    50% {-webkit-box-shadow: 0 0 60px #f9f8d2; }
+    100% {-webkit-box-shadow: 0 0 20px #f9f8d2; }
+  }
+  
+  @-moz-keyframes glowing {
+    0% {-moz-box-shadow: 0 0 20px #f9f8d2; }
+    50% {-moz-box-shadow: 0 0 60px #f9f8d2; }
+    100% {-moz-box-shadow: 0 0 20px #f9f8d2; }
+  }
+  
+  @keyframes glowing {
+    0% {box-shadow: 0 0 20px #f9f8d2; }
+    50% {box-shadow: 0 0 60px #f9f8d2; }
+    100% {box-shadow: 0 0 20px #f9f8d2; }
+  }
+  
+  .sun-shadow {
+    position: absolute;
+    background-color: #efed8f;
+    border-color: #efed8f;
+    height: 50px;
+    width: 25px;
+    top: 50px;
+    left: 125px;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  /* Avion */
+.plane {
+    position: relative;
+    top: -315px;
+    left: -350px;
+    /* Animacion del avion */
+    animation: slide1 35000ms infinite linear 2s;
+    -moz-animation: slide1 35000ms infinite linear 2s;
+    -o-animation: slide1 35000ms infinite linear 2s;
+    animation: slide1 35000ms infinite linear  2s;
+
+  }
+    
+/* keyframes para la animacion del avion */
+
+@keyframes slide1 {
+    from {transform: translateX(-350px);}
+    to {transform: translateX(2500px);}
+}
+
+.plane-body {
+  position: absolute;
+  width: 8px;
+  border-right: 3px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 65px solid #fff;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.front {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  height: 15px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.wing {
+  position: absolute;
+  top: -6px;
+  left: 6px;
+  width: 5px;
+  border-right: 8px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 40px solid #fff;
+  -moz-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
+.back-wing {
+  position: absolute;
+  top: 14px;
+  left: -28px;
+  width: 5px;
+  border-right: 6px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 16px solid #fff;
+  -moz-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.decoration {
+  position: absolute;
+  left: -25px;
+  top: 33px;
+  height: 3px;
+  width: 80px;
+  background-color: #68d182;
+}
+
+.front-window {
+  position: absolute;
+  top: 28px;
+  left: 40px;
+  height: 4px;
+  width: 15px;
+  background-color: #9de6ea;
+  border-radius: 10px 20px 0px 10px;
+}
+
+.window1 {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  height: 4px;
+  width: 4px;
+  background-color: #9de6ea;
+  border-radius: 20px;
+}
+
+.window2 {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  height: 4px;
+  width: 4px;
+  background-color: #9de6ea;
+  border-radius: 20px;
+}
+
+.window3 {
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  height: 4px;
+  width: 4px;
+  background-color: #9de6ea;
+  border-radius: 20px;
+}
+
+.window4 {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  height: 4px;
+  width: 4px;
+  background-color: #9de6ea;
+  border-radius: 20px;
+}
+
+/*Nubes*/
+#clouds{
+	padding: 100px 0;
+
+}
+
+/* Hora de finalizar la forma de la nube */
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Hora de animar*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, y position de nubes para efecto realista*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacidad proporcional al tamaño*/
+	
+	/*La velocidad también será proporcional al tamaño y la opacidad.*/
+	/*Más la velocidad. Menos el tiempo en 's' = segundos*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacidad proporcional al tamaño*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacidad proporcional al tamaño*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacidad proporcional al tamaño*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+
+#btn-abrir-popup{
+  padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+  width:150px; 
+  margin: -20px -50px; 
+  position: absolute;
+  top: 90%;
+  left:50%;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.contenedor article {
+	line-height: 28px;
+}
+
+.contenedor article h1 {
+	font-size: 30px;
+	text-align: left;
+	padding: 50px 0;
+}
+
+.contenedor article p {
+	margin-bottom: 20px;
+}
+
+.contenedor article .btn-abrir-popup {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/* POPUP */
+/* ------------------------- */
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs {
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs input {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	font-size: 18px;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup form .btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}

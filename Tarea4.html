@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css" media="all"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Arbol Familiar Jorge Parada</title>
+</head>
+<body>
+    
+    <div class="top-section">
+        <div class="sky"></div>
+        <button class="sun" onclick="darkMode()"></button>
+        <div class="sun-shadow"></div>
+        </div>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">Foto Familiar</button>
+<!-- Inicio del Avion --> 
+        <div class="plane">
+            <div class="plane-body"></div>
+            <div class="front"></div>
+            <div class="wing"></div>
+            <div class="back-wing"></div>
+            <div class="decoration"></div>
+            <div class="front-window"></div>
+            <div class="window1"></div>
+            <div class="window2"></div>
+            <div class="window3"></div>
+            <div class="window4"></div>
+          </div> <!-- Fin del avion --> 
+          <div id="clouds">
+            <div class="cloud x1"></div>
+            <!-- Es hora de que varias nubes bailen -->
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+        </div>
+        <!-- Ventana Emergente-->
+        <div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				
+				<h3>Foto Familiar</h3>
+                <h4>(Quienes viven conmigo en casa)</h4>
+				<form action="">
+					<div class="contenedor-inputs">
+						<img src="familiar.jpg" width="550" height="400">
+					</div>
+					<button class="btn-submit" id="btn-cerrar-popup" >Cerrar</button>
+				</form>
+			</div>
+		</div>
+	</div><!-- Fin Ventana Emergente-->
+</body>
+<script src="funciones.js">
+</script>
+</html>
